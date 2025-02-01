@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - FinVerse</title>
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1f2937, #1f2937); /* Smooth gradient background */
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #1f2937;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff99;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navigation a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #00ff99;
+        }
+
+        /* Courses Section */
+        .courses-container {
+            max-width: 900px;
+            margin: 80px auto 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            background-color: #1f2937;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #00ff99;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            margin-bottom: 10px;
+        }
+
+        .course-category {
+            margin-bottom: 30px;
+            background: #1f2937;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .course-category ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .course-category li {
+            background: #1f2937;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .course-category li:hover {
+            background-color: #00b894;
+            color: #fff;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button styles */
+        .cta-button {
+            background-color: #00ff99;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #00ff99;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background-image: url('your-image.jpg'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            filter: brightness(50%);
+        }
+
+        .hero-content {
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .hero .cta-button {
+            background-color: #00ff99;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #00ff99;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">FINVERSE</a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="abnew-1.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="index1.html">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Courses Section -->
+    <main class="courses-container">
+        <h1>Our Courses</h1>
+
+        <section class="course-category">
+            <h2>📘 Basics of Economics</h2>
+            <ul>
+                <li><strong>Introduction to Economics:</strong> Supply & demand, market structures, and economic indicators.</li>
+                <li><strong>Microeconomics:</strong> Consumer behavior, business decision-making, and market equilibrium.</li>
+                <li><strong>Macroeconomics:</strong> Economic trends, fiscal & monetary policies, and global growth.</li>
+            </ul>
+        </section>
+
+        <section class="course-category">
+            <h2>📈 Investing Money</h2>
+            <ul>
+                <li><strong>Investing Basics for Beginners:</strong> Stocks, bonds, mutual funds, and real estate investments.</li>
+                <li><strong>Building an Investment Portfolio:</strong> Diversification, risk management, and long-term planning.</li>
+                <li><strong>Advanced Investment Strategies:</strong> Dollar-cost averaging, dividend reinvestment, and tax-efficient investing.</li>
+            </ul>
+        </section>
+
+        <section class="course-category">
+            <h2>💹 Understanding the Finance Market</h2>
+            <ul>
+                <li><strong>Introduction to Financial Markets:</strong> Stock, bond, and forex markets explained.</li>
+                <li><strong>Types of Financial Instruments:</strong> Stocks, bonds, derivatives, and financial products.</li>
+                <li><strong>Market Analysis and Trading:</strong> Technical analysis, trend analysis, and trading strategies.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 FinVerse. All rights reserved.</p>
+    </footer>
+</body>
+</html>

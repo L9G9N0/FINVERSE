@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile | FinVerse</title>
+    <link rel="stylesheet" href="profile.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FINVERSE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#finance-topics">Finance Topics</a></li>
+                <li><a href="#latest-news">News</a></li>
+                <li class="dropdown">
+                    <a href="#profile-intro">Profile ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile-intro" class="profile-intro">
+            <h2>Welcome, User</h2>
+            <p>Your learning progress and finance insights.</p>
+        </section>
+
+        <section id="learning-progress" class="progress-container">
+            <h3>Learning Progress</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 65%;">65%</div>
+            </div>
+        </section>
+
+        <section id="finance-topics" class="content-box">
+            <h3>Finance Topics</h3>
+            <ul>
+                <li><a href="https://www.investopedia.com/terms/s/stockmarket.asp" target="_blank">📈 Stock Market Basics</a></li>
+                <li><a href="https://www.coindesk.com/" target="_blank">💰 Cryptocurrency Trends</a></li>
+                <li><a href="https://www.morningstar.com/" target="_blank">📊 Investment Strategies</a></li>
+                <li><a href="https://www.nerdwallet.com/category/budgeting" target="_blank">💵 Budgeting Tips</a></li>
+            </ul>
+        </section>
+
+        <section id="latest-news" class="content-box">
+            <h3>Latest Finance News</h3>
+            <ul>
+                <li><a href="https://www.bloomberg.com/markets" target="_blank">📢 Stock Market Hits Record Highs</a></li>
+                <li><a href="https://cointelegraph.com/" target="_blank">🚀 Crypto Adoption Surges in 2025</a></li>
+                <li><a href="https://www.forbes.com/investing/" target="_blank">📌 Top Investment Strategies for Beginners</a></li>
+                <li><a href="https://www.finextra.com/" target="_blank">🤖 AI in Finance: The Future of Trading</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️ 2025 EcoFinance Platform. All Rights Reserved.</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

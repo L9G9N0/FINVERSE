@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FinVerse</title>
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #1f2937; /* Dark background */
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #1f2937;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ff99;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navigation a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #00ff99;
+        }
+
+        /* About Section */
+        .about-container {
+            max-width: 800px;
+            margin: 120px auto;
+            padding: 20px;
+            background: #1f2937;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #00ff99;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .about-info {
+            font-size: 22px;
+            font-weight: bold;
+            color: #00ff99;
+            margin-top: 40px;
+        }
+
+        /* Our Mission Section */
+        .mission-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .mission-text {
+            flex: 1;
+        }
+
+        .mission-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .mission-image img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">FinVerse</a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="abnew-1.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="index1.html">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="about-container">
+        <h1>About Us</h1>
+        <p>Welcome to <strong>FinVerse</strong>, where financial education meets practical insights for a sustainable future.</p>
+
+        <!-- Our Mission Section -->
+        <div class="mission-container">
+            <div class="mission-text">
+                <p class="about-info">🚀 Our Mission</p>
+                <p>We aim to provide high-quality financial education that empowers individuals to make informed, eco-conscious decisions.</p>
+            </div>
+            <div class="mission-image">
+                <img src="{{ url_for('static', filename='Learn.jpg') }}" alt="Learn">
+            </div>
+        </div>
+
+        <p class="about-info">🌟 Our Story</p>
+        <p>Founded by <strong>Aditya, Harsh, Chaitanya, and Hariom</strong>, FinVerse was built with the vision of making financial knowledge accessible and actionable for a sustainable future.</p>
+
+        <p class="about-info">📖 Our Core Values</p>
+        <p>✅ Education First | ✅ Transparency | ✅ Accessibility | ✅ Innovation</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 FinVerse. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
